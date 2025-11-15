@@ -1,11 +1,45 @@
-<div align="center">
+# Pulse v0.1 - Системный Монитор
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Это стартовый скелет проекта "Pulse", интеллектуального системного монитора для вашего ПК.
 
-  <h1>Built with AI Studio</h2>
+## Описание
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+**Pulse** — это кросс-платформенное десктопное приложение для мониторинга состояния компьютера. Оно не просто показывает цифры, а ставит "диагноз" системе и дает полезные советы.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+Эта версия (v0.1) представляет собой базовый каркас приложения, созданный с помощью `pywebview` и `Flask`. На данный момент она отображает только стартовое окно.
 
-</div>
+## Технологический стек
+
+-   **Бэкенд:** Python, Flask, psutil
+-   **Фронтенд:** HTML, CSS, JavaScript
+-   **Обертка:** pywebview
+
+## Установка и запуск
+
+1.  **Клонируйте репозиторий:**
+    ```bash
+    git clone https://github.com/your-username/catalyst-pulse.git
+    cd catalyst-pulse
+    ```
+
+2.  **Создайте и активируйте виртуальное окружение:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # для Windows: venv\Scripts\activate
+    ```
+
+3.  **Установите зависимости:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Запустите приложение:**
+    ```bash
+    python main.py
+    ```
+
+## План разработки
+
+-   **[x] Этап 1: "Скелет"** - Создание рабочего каркаса приложения.
+-   **[ ] Этап 2: "Сердце"** - Интеграция движка диагностики (сбор данных о CPU, RAM, Disk).
+-   **[ ] Этап 3: "Лицо и Мозг"** - Разработка интерфейса и логики для выдачи советов.
